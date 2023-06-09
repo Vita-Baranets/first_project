@@ -1,0 +1,206 @@
+.col {
+
+    @include m(right) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.blog-categories {
+    margin-bottom: 24px;
+
+    @include e(title) {
+        font-size: rem(20px);
+        line-height: rem(23px);
+        font-weight: $boldFontWeight;
+        color: $blackColor;
+        margin: 0;
+    }//.title
+
+    @include e(nav) {
+        list-style: none;
+        margin: 14px 0 24px 0;
+        padding: 0;
+    }//.nav
+
+    @include e(item) {
+        display: flex;
+        justify-content: space-between;
+        padding: 18px 0 9px 20px;
+        position: relative;
+        border-bottom: 1px solid $rightBoxLine;
+
+        @include before('icon_nav.svg', 8px, 10px) {
+            left: 0;
+            top: 50%;
+        }
+    }//.item
+
+    @include e(link) {
+        text-decoration: none;
+        line-height: rem(18px);
+        color: $mainColor;
+        max-width: 280px;
+
+        @include m(sell) {
+            font-weight: $boldFontWeight;
+        }
+    }//.link
+
+    @include e(number) {
+        display: inline-block;
+        padding-right: 5px;
+    }//.number
+}//.blog-categories
+
+.top-articles {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 63px;
+
+    @include e(title) {
+        margin: 0;
+        font-size: rem(20px);
+        line-height: rem(23px);
+        font-weight: $mediumFontWeight;
+        color: $blackColor;
+    }//.title
+
+    @include e(post) {
+        display: flex;
+        padding: 36px 0 26px 0;
+        border-bottom: 1px solid $rightBoxLine;
+
+        &:last-of-type {
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+    }//.post
+
+    @include e(img-box) {
+        margin-right: 27px;
+    }//.img-box
+
+    @include e(img) {
+        width: 80px;
+        height: 70px;
+    }//.img
+
+    @include e(text) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-grow: 1;
+        transform: translateY(-3px);
+    }//.text
+
+    @include e(link) {
+        font-size: rem(18px);
+        line-height: rem(24px);
+        color: $blackColor;
+        text-decoration: none;
+    }
+
+    @include e(subtitle) {
+        font-size: rem(14px);
+        line-height: rem(16px);
+        color: $redColor;
+    }//.subtitle
+
+}//.top-articles
+
+.join-us {
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px 28px 16px;
+    margin-bottom: 28px;
+    background: $purpleColor;
+    color: $white;
+    border-radius: 10px;
+
+    @include e(post) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @include e(title) {
+        font-size: rem(30px);
+        line-height: rem(34px);
+        font-weight: 400;
+        margin: 10px 0 0 0;
+        text-align: center;
+    }//.title
+
+    @include e(subtitle) {
+        font-size: rem(16px);
+        line-height: rem(26px);
+        margin: 43px 0;
+        text-align: center;
+    }//.subtitle
+
+    @include e(img-box) {
+        order: -1;
+        width: 230px;
+        align-self: center;
+    }//.img
+
+    @include e(img) {
+        transform-box: content-box;
+        transform-origin: 50% 50%;
+        animation: envelope 3s ease-in-out infinite;
+    }
+
+    @keyframes envelope {
+        25% { 
+            transform: scale(1.1) rotate(5deg); 
+        }
+        50% { 
+            transform: scale(1);
+        }
+        75% { 
+            transform: scale(1.1) rotate(5deg);
+        }
+        100% { 
+            transform: scale(1);
+        }
+    }
+
+
+    @include e(form) {
+        display: flex;
+        flex-direction: column;
+        width: 304px;
+    }//.form
+
+    @include e(email-box) {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    @include e(control) {
+        display: block;
+        width: 100%;
+        padding: 20px 10px 16px 10px;
+        border: 0;
+        border-radius: 27px;
+        font-size: rem(16px);
+        line-height: rem(18px);
+        text-align: center;
+        background: $white;
+        color: $formMailColor;
+    }//.control
+   
+    @include e(btn) {
+        display: block;
+        border: 0;
+        border-radius: 27px;
+        width: 100%;
+        padding: 18px 0;
+        background: $redColor;
+        color: $white;
+        font-size: rem(16px);
+        line-height: rem(18px);
+        text-transform: uppercase;
+    }//.btn
+}//.join-us

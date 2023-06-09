@@ -1,0 +1,19 @@
+.col {
+
+    @include m(right) {
+        justify-content: space-between;
+    }
+}//.col-right
+
+.blog-categories {
+    flex-basis: 450px;
+    margin: 0;
+}//.blog-categories
+
+.top-articles {
+    flex-basis: 450px;
+}//.top-articles
+
+.join-us {
+    justify-content: center;
+}//.join-us

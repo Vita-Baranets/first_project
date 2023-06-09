@@ -1,16 +1,25 @@
 //fonts
-$google-font: "https://fonts.googleapis.com/css?family=Ubuntu:400,500";
-$prefix: prefix- !default;
+$google-font: 'https://fonts.googleapis.com/css2?family=Nunito:wght@700;800&family=Quicksand:wght@400;700&family=Roboto:wght@700&family=Ubuntu:wght@300;400;500;700&display=swap';
+$prefix: vb- !default;
 $baseFontSize: 16px;
 $baseFontFamily: "Ubuntu", sans-serif;
+$nutinoFontFamily: "Nunito", sans-serif;
+$quicksandFontFamily: 'Quicksand', sans-serif;
+$lightFontWeight: 300;
 $mediumFontWeight: 500;
+$boldFontWeight: 700;
+$extraBoldFontWeight: 800;
+$containerWidth: 1200px;
+$formMobileWidth: 319px;
+$formTabletWidth: 433px;
+$formDesktopWidth: 712px;
 
-$mobilePadding: (12px / $baseFontSize) * 1rem;
+$mobilePadding: 0;
 $desktopPadding: 1rem;
 
 // Paths
 
-$imagesPath: "../i/";
+$i: "../i/";
 $fontsPath: "../fonts/";
 $usersFilesPath: "../userfiles/";
 
@@ -22,6 +31,20 @@ $indigo: #6610f2 !default;
 $purple: #6f42c1 !default;
 $pink: #d63384 !default;
 $red: #dc3545 !default;
+$mainColor: #222222;
+$redColor: #E63A28;
+$blackColor: #333333;
+$bgColor: #F5F5F5;
+$beigeColor: #FFEAA2;
+$blockBgColor: #DDDDDD;
+$darkGreyColor: #C4C4C4;
+$purpleColor: #7828E6;
+$blueColor: #2B5AE1;
+$bgPostColor: #F5F7FA;
+$borderPag: #EEEEEE;
+$rightBoxLine: #CCCCCC;
+$formMailColor: #9D9D9D;
+
 
 $colors: (
   "black": $black,
@@ -31,4 +54,6 @@ $colors: (
   "purple": $purple,
   "pink": $pink,
   "red": $red,
+  "container-padding": $mobilePadding,
+  "form-width": $formMobileWidth,
 ) !default;

@@ -1,0 +1,106 @@
+.header {
+    margin-bottom: 22px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+
+    @include e(burger-menu) {
+        position: absolute;
+        width: 28px;
+        height: 22px;
+        top: 6px;
+        right: 0;
+    }
+}
+
+.logo-box {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+    padding-left: 10px;
+    
+    @include e(img) {
+        display: flex;
+        align-items: center;
+    }
+
+    @include e(logo) {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        vertical-align: top;
+        transform-box: content-box;
+        transform-origin: 50% 50%;
+        animation: logo 6s ease-in-out infinite;
+    }
+
+    @keyframes logo {
+        50% { 
+            transform: rotate(360deg);
+        }
+        100% {
+            transform: rotate(-360deg);
+        }
+    }
+
+    @include e(text) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    @include e(title) {
+        font-size: rem(36px);
+        line-height: rem(49px);
+        font-weight: $extraBoldFontWeight;
+        font-family: $nutinoFontFamily;
+    }
+
+    @include e(subtitle) {
+        font-size: rem(14px);
+        line-height: rem(18px);
+        font-family: $quicksandFontFamily;
+    }
+}//.logo-box
+
+.form-box {
+    order: 2;
+    flex-basis: 100%;
+
+    @include e(form) {
+        @include getCssVar(width, form-width);
+        position: relative;
+
+        @include before('zoom.svg', 20px, 23px) {
+            top: 22px;
+            right: 32px;
+        }
+    }//.form
+
+    @include e(control) {
+        width: 100%;
+        padding: 22px 53px 19px 50px;
+        border: 1px solid $blockBgColor;
+        border-radius: 27px;
+        font-family: $quicksandFontFamily;
+        font-size: rem(16px);
+        line-height: rem(20px);
+        color: $mainColor;
+    }//.control
+
+}//.form-box
+
+.lang-box {
+    display: flex;
+    align-self: flex-end;
+    order: 1;
+    gap: 5px;
+    margin-bottom: 24px;
+    
+    @include e(title) {
+        font-family: $quicksandFontFamily;
+        font-size: rem(16px);
+        line-height: rem(20px);
+        color: $mainColor;
+    }//.title
+}//.lang-box

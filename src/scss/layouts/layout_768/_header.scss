@@ -1,0 +1,13 @@
+
+
+.form-box {
+    
+    @include e(form) {
+        @include setCssVar(form-width, $formTabletWidth);
+    }//.form
+
+    @include e(control) {
+        padding: 22px 60px 19px 68px;
+    }//.control
+
+}//.form-box

@@ -1,0 +1,7 @@
+
+.form-box {
+    
+    @include e(form) {
+        @include setCssVar(form-width, $formTabletWidth);
+    }//.form
+}//.form-box

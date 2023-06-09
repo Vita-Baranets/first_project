@@ -5,10 +5,31 @@ html {
 body {
   @include getCssVar(font-family);
   font-size: 1rem;
+  color: $mainColor;
+  background: $bgColor;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
-
+p {
+  margin: 0;
+  padding: 0;
+}
 .container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 12px;
+  max-width: $containerWidth;
+  width: 100%;
+  margin: 0 auto;
+  @include getCssVar(padding-left, container-padding);
+  @include getCssVar(padding-right, container-padding);
+}
+.content-box {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+.fluid-box-img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
 }

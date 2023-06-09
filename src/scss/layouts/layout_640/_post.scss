@@ -1,0 +1,8 @@
+.col {
+
+    @include m(left) {
+        width: initial;
+        margin-left: initial;
+        margin-right: initial;
+    }
+}

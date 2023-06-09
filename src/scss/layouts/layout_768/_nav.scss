@@ -1,0 +1,35 @@
+.nav {
+    display: block;
+    order: 3;
+    margin-top: 27px;
+}
+.nav-box {
+    display: flex;
+    margin: 0;
+    padding: 0 15px;
+    list-style: none;
+    
+    @include e(item) {
+        margin-right: 63px;
+
+        &:last-of-type {
+            margin-right: 0px;
+        }
+    }//.item
+
+    @include e(link) {
+        line-height: rem(18px);
+        color: $mainColor;
+        text-decoration: none;
+
+        @include m(register) {
+            position: relative;
+            padding-left: 27px;
+
+            @include before('reg_arrow.svg', 18px, 21px) {
+                left: 0;
+                top: 2px;
+            }
+        }
+    }
+}//.nav-box

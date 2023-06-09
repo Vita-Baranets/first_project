@@ -1,0 +1,16 @@
+.nav {
+    order: 1;
+    align-self: center;
+    flex-grow: 1;
+    margin-top: 0;
+}
+.nav-box {
+
+    @include e(link) {
+
+        &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+}//nav-box

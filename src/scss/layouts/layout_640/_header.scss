@@ -1,0 +1,31 @@
+
+.header {
+    margin-bottom: 19px;
+    justify-content: initial;
+
+    @include e(burger-menu) {
+        display: none;
+    }
+}
+
+.logo-box {
+    margin-right: auto;
+    margin-bottom: 0;
+}//.logo-box
+
+.form-box {
+    order: 1;
+    flex: 0 0 319px;
+    margin-right: 4px;
+
+    @include e(form) {
+        @include setCssVar(form-width, $formMobileWidth);
+    }//.form
+
+}//.form-box
+
+.lang-box {
+    align-self: center;
+    order: 2;
+    margin-bottom: 0;
+}//.lang-box

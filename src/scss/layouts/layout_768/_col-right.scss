@@ -1,0 +1,18 @@
+.blog-categories {
+    margin: 0 136px 0 0;
+}//.blog-categories
+
+.top-articles {
+    flex-basis: 280px;
+}//.top-articles
+
+.join-us {
+    
+    @include e(post) {
+       margin-right: 140px; 
+    }
+
+    @include e(img-box) {
+        width: 250px;
+    }//.img
+}//.join-us

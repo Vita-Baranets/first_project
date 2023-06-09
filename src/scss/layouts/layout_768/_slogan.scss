@@ -1,0 +1,16 @@
+.slogan {
+    flex-direction: row;
+    justify-content: initial;
+    padding: 15px 0 19px 0;
+
+    @include e(img-box) {
+        width: 151px;
+        height: 79px;
+        margin-bottom: 0;
+        margin-right: 25px;
+    }//.img-box
+
+    @include e(title) {
+        align-items: center;
+    }//.title
+  }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>title</title>
+    <title>Beetroot blog</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -9,11 +9,335 @@
   </head>
   <body>
     <div class="container">
-      <h1>Index.html</h1>
+      <header class="header">
+        <h1 class="header__title sr-only">Welcom to our blog</h1>
+        <div class="logo-box">
+          <div class="logo-box__img">
+            <img src="./i/logo.svg" class="logo-box__logo" />
+          </div>
+          <div class="logo-box__text">
+            <p class="logo-box__title">Doremi</p>
+            <p class="logo-box__subtitle">Buy, Sell Or Rent</p>
+          </div>
+        </div>
+        <!--./logo-box-->
+        <div class="form-box">
+          <div class="form-box__form">
+            <input
+              type="text"
+              class="form-box__control"
+              placeholder="Search..."
+              autocomplete="off"
+            />
+          </div>
+        </div>
+        <!--./form-box-->
+        <nav class="nav">
+          <h2 class="nav__title sr-only">Navigation</h2>
+          <ul class="nav-box">
+            <li class="nav-box__item nav-box__item_explore">
+              <a href="#" class="nav-box__link nav-box__link_explore"
+                >Explore</a
+              >
+            </li>
+            <li class="nav-box__item nav-box__item_about">
+              <a href="#" class="nav-box__link nav-box__link_about">About Us</a>
+            </li>
+            <li class="nav-box__item nav-box__item_pages">
+              <a href="#" class="nav-box__link nav-box__link_pages">Pages</a>
+            </li>
+            <li class="nav-box__item nav-box__item_register">
+              <a href="#" class="nav-box__link nav-box__link_register"
+                >Sign in or Register</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div class="lang-box">
+          <p class="lang-box__title">Eng</p>
+          <div class="lang-box__img">
+            <img src="./i/eng.png" class="fluid-box-img" />
+          </div>
+          <div class="lang-box__arrow">
+            <img src="./i/arrow.svg" class="fluid-box-img" />
+          </div>
+        </div>
+        <!--./lang-box-->
+        <div class="header__burger-menu">
+          <img src="i/navicon.svg" class="fluid-box-img" />
+        </div>
+      </header>
     </div>
 
-    <!--  JavaScript here -->
-    <!-- <script src="js/app.js"></script> -->
-    <!-- <script src="js/script.js"></script> -->
+    <div class="fluid-box">
+      <div class="container">
+        <div class="slogan">
+          <div class="slogan__img-box">
+            <img src="./i/banner_image.svg" class="fluid-box-img" />
+          </div>
+          <p class="slogan__title">
+            Help Ukraine with the Beetroot Tech Relief Fund
+          </p>
+        </div>
+        <!--./slogan-->
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="content-box">
+        <div class="col col_left">
+          <article class="post">
+            <h2 class="post__title">
+              How To Buy, Sell or Rent Items From Doremi
+            </h2>
+            <div class="post__img-box">
+              <div class="post__img">
+                <picture>
+                  <source
+                    srcset="i/upload/Post.png"
+                    media="(min-width: 640px)"
+                    class="fluid-box-img"
+                  />
+                  <img src="i/upload/Post_mob.png" class="fluid-box-img" />
+                </picture>
+              </div>
+              <div class="post__meta">
+                <span class="post__number">26</span>
+                <span class="post__month">sep</span>
+              </div>
+            </div>
+            <!--./post__img-box-->
+            <ul class="post__nav">
+              <li class="post__item">
+                <a href="#" class="post__link post__link_admin">Admin</a>
+              </li>
+              <li class="post__item">
+                <a href="#" class="post__link post__link_rent">Rent Buy Sell</a>
+              </li>
+              <li class="post__item">
+                <a href="#" class="post__link post__link_comments"
+                  >56 Comments</a
+                >
+              </li>
+            </ul>
+            <p class="post__text">
+              Eiusmod temporl incididuntys labore dolore magna aliqua sed lorems
+              ipsum dolor amet consecteur eiusmod tempor incididunt ut labore et
+              dolor magna minim venia quis nostrud exercitation ullamco laboris
+              nisi ut aliquip.
+            </p>
+            <div class="post-button">
+              <a href="#" class="post-button__link"
+                >read more<span class="sr-only">Article 1</span></a
+              >
+            </div>
+          </article>
+
+          <article class="post">
+            <h2 class="post__title">
+              How To Buy, Sell or Rent Items From Doremi
+            </h2>
+            <div class="post__img-box">
+              <div class="post__img">
+                <picture>
+                  <source
+                    srcset="i/upload/Post.png"
+                    media="(min-width: 640px)"
+                    class="fluid-box-img"
+                  />
+                  <img src="i/upload/Post_mob.png" class="fluid-box-img" />
+                </picture>
+              </div>
+              <div class="post__meta">
+                <span class="post__number">26</span>
+                <span class="post__month">sep</span>
+              </div>
+            </div>
+            <!--./post__img-box-->
+            <ul class="post__nav">
+              <li class="post__item">
+                <a href="#" class="post__link post__link_admin">Admin</a>
+              </li>
+              <li class="post__item">
+                <a href="#" class="post__link post__link_rent">Rent Buy Sell</a>
+              </li>
+              <li class="post__item">
+                <a href="#" class="post__link post__link_comments"
+                  >56 Comments</a
+                >
+              </li>
+            </ul>
+            <p class="post__text">
+              Eiusmod temporl incididuntys labore dolore magna aliqua sed lorems
+              ipsum dolor amet consecteur eiusmod tempor incididunt ut labore et
+              dolor magna minim venia quis nostrud exercitation ullamco laboris
+              nisi ut aliquip.
+            </p>
+            <div class="post-button">
+              <a href="#" class="post-button__link"
+                >read more<span class="sr-only">Article 2</span></a
+              >
+            </div>
+          </article>
+          <!--./post-->
+          <div class="pagination">
+            <ul class="pagination__nav">
+              <li class="pagination__item pagination__item_first">
+                <a href="#" class="pagination__link pagination__link_first"
+                  >1</a
+                >
+              </li>
+              <li class="pagination__item pagination__item_second">
+                <a href="#" class="pagination__link pagination__link_second"
+                  >2</a
+                >
+              </li>
+              <li class="pagination__item pagination__item_third">
+                <a href="#" class="pagination__link pagination__link_third"
+                  >3</a
+                >
+              </li>
+              <li class="pagination__item pagination__item_arrow">
+                <a href="#" class="pagination__link pagination__link_arrow">
+                  <span class="sr-only">Next page</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!--./pagination-->
+        </div>
+        <!--./col_left-->
+        <div class="col col_right">
+          <div class="blog-categories">
+            <h2 class="blog-categories__title">Blog Categories</h2>
+            <ul class="blog-categories__nav">
+              <li class="blog-categories__item">
+                <a
+                  href="#"
+                  class="blog-categories__link blog-categories__link_buy"
+                  >Buying Items</a
+                >
+                <span>(87)</span>
+              </li>
+              <li class="blog-categories__item">
+                <a
+                  href="#"
+                  class="blog-categories__link blog-categories__link_sell"
+                >
+                  Selling Items</a
+                >
+                <span class="blog-categories__number">(12)</span>
+              </li>
+              <li class="blog-categories__item">
+                <a
+                  href="#"
+                  class="blog-categories__link blog-categories__link_rent"
+                  >Renting Items</a
+                >
+                <span>(34)</span>
+              </li>
+              <li class="blog-categories__item">
+                <a
+                  href="#"
+                  class="blog-categories__link blog-categories__link_promote"
+                  >Promote Business</a
+                >
+                <span>(9)</span>
+              </li>
+              <li class="blog-categories__item">
+                <a
+                  href="#"
+                  class="blog-categories__link blog-categories__link_cities"
+                  >Worldwide Cities</a
+                >
+                <span>(50)</span>
+              </li>
+            </ul>
+            <!--./nav-->
+          </div>
+          <!--./blog-categories-->
+          <article class="top-articles">
+            <h2 class="top-articles__title">Our Top Articles</h2>
+            <div class="top-articles__post">
+              <div class="top-articles__img-box">
+                <img src="i/Rectangle.png" class="top-articles__img" />
+              </div>
+              <div class="top-articles__text">
+                <div class="top-articles__name">
+                  <a href="#" class="top-articles__link"
+                    >How to spend up free vacations</a
+                  >
+                </div>
+                <div class="top-articles__subtitle">Cars, Bikes & Trucks</div>
+              </div>
+              <!--./text-->
+            </div>
+
+            <div class="top-articles__post">
+              <div class="top-articles__img-box">
+                <img src="i/Rectangle.png" class="top-articles__img" />
+              </div>
+              <div class="top-articles__text">
+                <div class="top-articles__name">
+                  <a href="#" class="top-articles__link"
+                    >Welcome to quarantine free travel</a
+                  >
+                </div>
+                <div class="top-articles__subtitle">Drones, Cameras</div>
+              </div>
+              <!--./text-->
+            </div>
+
+            <div class="top-articles__post">
+              <div class="top-articles__img-box">
+                <img src="i/Rectangle.png" class="top-articles__img" />
+              </div>
+              <div class="top-articles__text">
+                <div class="top-articles__name">
+                  <a href="#" class="top-articles__link"
+                    >10 most beautiful cities for traveling</a
+                  >
+                </div>
+                <div class="top-articles__subtitle">Electronic Items</div>
+              </div>
+              <!--./text-->
+            </div>
+            <!--./post-->
+          </article>
+          <!--./top-articles-->
+          <aside class="join-us">
+            <div class="join-us__post">
+              <h2 class="join-us__title">Join Us & Get Listed</h2>
+              <div class="join-us__subtitle">
+                Eiusmod tempor incididunt ut labore exercitation ullamco
+                laboris.
+              </div>
+              <form class="join-us__form" autocomplete="off">
+                <div class="join-us__email-box">
+                  <input
+                    type="email"
+                    name="email"
+                    class="join-us__control"
+                    placeholder="Enter your email"
+                    maxlength="30"
+                    required
+                  />
+                </div>
+                <!--./email-box-->
+                <button class="join-us__btn">subscribe</button>
+              </form>
+              <!--./form-->
+            </div>
+            <!--./post-->
+            <div class="join-us__img-box">
+              <img src="i/envelope.svg" class="join-us__img" />
+            </div>
+          </aside>
+        </div>
+        <!--./col_right-->
+      </div>
+      <!--./content-box-->
+    </div>
   </body>
 </html>

@@ -1,0 +1,13 @@
+.content-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 42px;
+  }
+
+  .col {
+     
+    @include m(left) {
+        flex-basis: 760px;
+    }
+  }

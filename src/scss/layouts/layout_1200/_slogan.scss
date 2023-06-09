@@ -1,0 +1,16 @@
+.slogan {
+    justify-content: initial;
+    padding: 19px 0 33px 65px;
+
+    @include e(img-box) {
+        width: 260px;
+        height: 128px;
+        margin-right: 31px;
+    }//.img-box
+
+    @include e(title) {
+        font-size: rem(30px);
+        line-height: rem(34px);
+    }//.title
+
+  }

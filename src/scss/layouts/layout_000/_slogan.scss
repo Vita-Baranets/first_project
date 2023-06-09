@@ -1,0 +1,26 @@
+
+.fluid-box {
+    width: 100vw;
+    background: $beigeColor;
+}
+
+.slogan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 0 36px 0;
+
+    @include e(img-box) {
+        width: 151px;
+        height: 74px;
+        margin-bottom: 23px;
+    }//.img-box
+
+    @include e(title) {
+        font-size: rem(24px);
+        line-height: rem(28px);
+        font-weight: $boldFontWeight;
+        text-align: center;
+    }//.title
+  }
